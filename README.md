@@ -1,11 +1,12 @@
 # taber
-business plan for a self-sustaining smart farm/data-center
+business plan for a self-sustaining smart farm & data-center
 
 ## components
 
-* space requirements...
-* power requirements...
-* cooling
+* servers for data processing software, and data storage
+* industrial space
+* power requirements? wind/solar generators, and infrastructure (100% sustainable)
+* cooling (fans, water source, air quality management)
 * physical security (employee badge access to video surveillance)
 * building management system (BMS) (for monitoring the space's environment and controlling it)
 
@@ -18,7 +19,7 @@ business plan for a self-sustaining smart farm/data-center
 * uninterruptible power (UPS)
 * software based management platforms (DCIM) (for reporting on system health, availability, capacity and configuration)
 
-## thnigs to consider
+## things to consider
 
 * Uptime Institute Tier Standard - redundancy/reliability
 * ANSI/TIA 942-B - planning, design, construction and commissioning of building trades, as well as fire protection, IT and maintenance
