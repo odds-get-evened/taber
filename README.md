@@ -26,4 +26,4 @@ business plan for a self-sustaining smart farm & data-center
 * EN 50600 series - IT cable and network design
 * ASHRAE - design and implementation of heating, ventilation, air conditioning, refrigeration
 
-!(cooling schema)[https://github.com/odds-get-evened/taber/blob/fb92610e3d1364f5e475d3f30adf2ab96d3ea543/data_center_with_hot_and_cold_aisles-f.png, "cooling schema"]
+![cooling schema](https://github.com/odds-get-evened/taber/blob/fb92610e3d1364f5e475d3f30adf2ab96d3ea543/data_center_with_hot_and_cold_aisles-f.png, "cooling schema")
