@@ -1,4 +1,8 @@
-# Business plan and proposal outline for a self-sustaining data center project:
+# taber
+
+by Christopher Walsh 2024
+
+## Business plan and proposal outline for a self-sustaining data center project:
 
 ### 1. **Executive Summary**
    - **Objective**: Establish a self-sustaining data center using renewable energy sources and advanced heating/cooling systems.
@@ -84,3 +88,5 @@
 ---
 
 Chris Walsh 10/20/2024
+
+signature: 8931fec33c757697f9e96d6728408761fa17b5fdf0412bfd81ee493c51126ce9
