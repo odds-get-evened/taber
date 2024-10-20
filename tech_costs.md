@@ -1,4 +1,8 @@
-# Date Center Technology Costs
+# taber
+
+by Christopher Walsh 2024
+
+## Date Center Technology Costs
 
 ### 1. **Servers**
    - **Rack Servers**: High-density, energy-efficient servers are ideal for data centers. You'll need to estimate the number of servers based on the size of your facility and projected customer demand.
@@ -84,3 +88,5 @@
 ---
 
 Chris Walsh 10/20/2024
+
+signature: 5ea9f0b5d9c67dfeba3cdd9f96a4c10732084422662ee7df3dfdda3972da12a9
