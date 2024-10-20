@@ -1,5 +1,7 @@
 # taber
 
+by Christopher Walsh
+
 ## business plan for a self-sustaining smart farm & data-center
 
 ### components
@@ -30,3 +32,9 @@
 ---
 
 ![cooling schema](https://github.com/odds-get-evened/taber/blob/fb92610e3d1364f5e475d3f30adf2ab96d3ea543/data_center_with_hot_and_cold_aisles-f.png)
+
+---
+
+Christopher Walsh 
+
+signature: 7267620eb6415889e8dd3388e10bb5de7cf169a25b00bb16e48ed72a060d2b59
