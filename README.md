@@ -35,6 +35,15 @@ by Christopher Walsh
 
 ---
 
+related documents:
+
+| Title            |                          |
+| ---------------- | ------------------------ |
+| Business Plan    | [link](business_plan.md) |
+| Technology Costs | [link](tech_costs.md)    |
+
+---
+
 Christopher Walsh 
 
-signature: 7267620eb6415889e8dd3388e10bb5de7cf169a25b00bb16e48ed72a060d2b59
+signature: d6f69fb6c1ee859f1b1acf00f00c21406a59abef5eb4e91b702b2f7b22538d27
