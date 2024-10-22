@@ -31,10 +31,6 @@ by Christopher Walsh
 
 ---
 
-![cooling schema](https://github.com/odds-get-evened/taber/blob/fb92610e3d1364f5e475d3f30adf2ab96d3ea543/data_center_with_hot_and_cold_aisles-f.png)
-
----
-
 related documents:
 
 | Title            |                          |
