@@ -1,5 +1,8 @@
 # Data Center Layout & Heat Management
 
+![image](https://github.com/user-attachments/assets/32f71b05-ef14-4200-9894-e407271f144c)
+
+
 by Chris Walsh
 
 ### 1. **Hot/Cold Aisle Containment**:
