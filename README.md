@@ -20,7 +20,7 @@ by Christopher Walsh
 * networking
 * cables and racks
 * uninterruptible power (UPS)
-* [software based management](test.md) platforms (for reporting on system health, availability, capacity and configuration)
+* [software based management](ai_for_efficiency.md) platforms (for reporting on system health, availability, capacity and configuration)
 
 ### things to consider
 
