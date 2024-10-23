@@ -20,7 +20,7 @@ by Christopher Walsh
 * networking
 * cables and racks
 * uninterruptible power (UPS)
-* software based management platforms (DCIM) (for reporting on system health, availability, capacity and configuration)
+* [software based management](test.md) platforms (for reporting on system health, availability, capacity and configuration)
 
 ### things to consider
 
