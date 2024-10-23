@@ -9,7 +9,7 @@ by Christopher Walsh
 * servers for data processing software, and data storage
 * industrial space
 * power requirements? wind/solar generators, and infrastructure (100% sustainable)
-* cooling (fans, water source, air quality management)
+* [cooling](data_center_layout_heat_mgmt.md) (fans, water source, air quality management)
 * physical security (employee badge access to video surveillance)
 * building management system (BMS) (for monitoring the space's environment and controlling it)
 
