@@ -1,8 +1,8 @@
-### 1. **Data Center Layout & Heat Management**
+# Data Center Layout & Heat Management
 
 by Chris Walsh
 
-#### **Hot/Cold Aisle Containment**:
+### 1. **Hot/Cold Aisle Containment**:
 - **Hot Aisles**: Servers generate significant heat, which can be captured by enclosing the back of the server racks where hot air is expelled.
 - **Cold Aisles**: Cool air is directed to the front of the servers, while the hot air is channeled away, preventing mixing and optimizing cooling efficiency.
 
@@ -60,4 +60,4 @@ This design would help reduce environmental impact, lower operating costs, and c
 ---
 
 Chris Walsh
-sig: 6f4fac6f6a4cbb4bc9709d10f4c51c62fd48ecdeea2bd31321b66ce4ff9a9a45
+sig: a516e2f0779b52cf38df86cf777f4faae473eb88fe32b54495886ca2e7cbc3d2
