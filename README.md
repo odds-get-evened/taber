@@ -33,10 +33,11 @@ by Christopher Walsh
 
 related documents:
 
-| Title            |                          |
-| ---------------- | ------------------------ |
-| Business Plan    | [link](business_plan.md) |
-| Technology Costs | [link](tech_costs.md)    |
+| Title                                             |                              |
+| ------------------------------------------------- | ---------------------------- |
+| Business Plan                                     | [link](business_plan.md)     |
+| Technology Costs                                  | [link](tech_costs.md)        |
+| Usage of AI for Optimizing Operating Efficiencies | [link](ai_for_efficiency.md) |
 
 ---
 
