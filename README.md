@@ -33,11 +33,14 @@ by Christopher Walsh
 
 related documents:
 
-| Title                                             |                              |
-| ------------------------------------------------- | ---------------------------- |
-| Business Plan                                     | [link](business_plan.md)     |
-| Technology Costs                                  | [link](tech_costs.md)        |
-| Usage of AI for Optimizing Operating Efficiencies | [link](ai_for_efficiency.md) |
+| Title                                             |                                         |
+| ------------------------------------------------- | --------------------------------------- |
+| Business Plan                                     | [link](business_plan.md)                |
+| Technology Costs                                  | [link](tech_costs.md)                   |
+| Usage of AI for Optimizing Operating Efficiencies | [link](ai_for_efficiency.md)            |
+| Data Center Layout & Heat Management              | [link](data_center_layout_heat_mgmt.md) |
+| BOM                                               | [link](materials.md)                    |
+| Why Smart Farming?                                | [link](why_smart_farming.md)            |
 
 ---
 
