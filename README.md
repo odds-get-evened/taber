@@ -2,7 +2,7 @@
 
 by Christopher Walsh
 
-## business plan for a self-sustaining smart data-center
+## business plan for a self-sustaining smart farm & data-center
 
 ### components
 
