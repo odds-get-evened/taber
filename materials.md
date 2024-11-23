@@ -66,13 +66,3 @@
 * Skilled Technicians: For regular checks and emergencies.
 
 ---
-
-
-* Environmental Sensors (temp./humidity/light):
-* IoT Gateways (data aggregators and communication)
-* Edge Devices (local computation and processing)
-* Communications components (WiFi, Zigbee, LoRa)
-* Data Storage/Processing Units (Servers)
-* Control Systems (HVAC, Lighting)
-* Data Acquisition Systems (for integrating sensors)
-* Backup Power Supply (UPS/batteries)
