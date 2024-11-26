@@ -41,6 +41,7 @@ related documents:
 | Data Center Layout & Heat Management              | [link](data_center_layout_heat_mgmt.md) |
 | BOM                                               | [link](materials.md)                    |
 | Why Smart Farming?                                | [link](why_smart_farming.md)            |
+| Boosting economies                                | [link]()                                |
 
 ---
 
