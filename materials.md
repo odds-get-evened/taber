@@ -38,6 +38,11 @@
   * Weather sensors (wind speed, solar irradiance, temperature).
   * Power sensors (voltage, current, battery levels).
 * Remote Monitoring Software: Provides real-time insights and alerts.
+* Custom sensor build:
+  * RaspPi Zero 2 W $18
+  * Atmospheric SEnsor Breakout BME280 $22
+  * BME680 [Air-quality] Breakout $20 (optional)
+  * Adafruit AS7341 10-channel light & color sensor breakout $16
  
 ### Backup Power
 
