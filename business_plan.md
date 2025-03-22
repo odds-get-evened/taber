@@ -78,8 +78,8 @@
    - **Funding Request**: $X million to establish a combined data center and smart farm facility.  
    - **Use of Funds**:  
      - 25% data center retrofitting.  
-     - 25% renewable energy systems.  
-     - 30% smart farming modules and AI integration.  
+     - 30% renewable energy systems.  
+     - 25% smart farming modules and AI integration.  
      - 20% operational overhead and marketing.  
 
 ---
