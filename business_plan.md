@@ -26,7 +26,7 @@
 ---
 
 ### **Market Analysis**  
-   - **Data Center Industry**: Driven by demand for cloud computing, AI, and IoT.  
+   - **Data Center Industry**: Driven by demand from cloud computing, AI, and IoT sources.  
    - **Indoor Agriculture Industry**: Increasing demand for sustainable, local, and year-round food production.  
    - **Target Market**:  
      - **Data Center Customers**: Small and medium businesses needing green hosting services.  
