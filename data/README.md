@@ -6,7 +6,7 @@ this is a place for storing data sources, and sharing applications in data-scien
 
 ## data-serv
 
-[over here :sunrise_over_mountains:](https://github.com/odds-get-evened/data-serv)
+[over here ⛵](https://github.com/odds-get-evened/data-serv)
 
 ### what is it?
 
