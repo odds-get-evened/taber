@@ -5,21 +5,41 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 
 
-def temps(size: int = 31, low: float = -32.0, high: float = 105.0, inc: float = 0.01):
+def temps(size: int = 31, low: float = -32.0, high: float = 105.0, inc: float = 0.01) -> list[float]:
+    """
+    generates a list of random temperatures, setting sample size,
+    low, high of the bounds, and an increment threshold
+    :param size:
+    :param low:
+    :param high:
+    :param inc:
+    :return:
+    """
     return bounded_rand(size=size, low=low, high=high, threshold=inc, start=0)
 
-def temp_time_series(size: int=31, low: float = -32.0, high: float = 105.0, inc: float = 0.01):
+
+def temp_time_series(size: int = 31, low: float = -32.0, high: float = 105.0, inc: float = 0.01) -> list[tuple]:
+    """
+    same as temps() except this latches a timestamp to each sample
+    :param size:
+    :param low:
+    :param high:
+    :param inc:
+    :return:
+    """
     tmps = temps(size=size, low=low, high=high, inc=0.1)
     tt = []
     for tmp in tmps:
         tt.append((time.time(), tmp))
+        # mimics time intervals
+        # @todo make this random within a bound
         time.sleep(random.uniform(0.01, 1.0))
 
     return tt
 
 
 def bounded_rand(size: int = 31, low: float = -1.0, high: float = 1.0, threshold: float = 0.01, start: float = None,
-                 rng: random.Random = None):
+                 rng: random.Random = None) -> list[float]:
     """
     generate a fixed length list of floats within a range
     where the delta between item value <= threshold
