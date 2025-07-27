@@ -21,7 +21,8 @@ def temps(size: int = 31, low: float = -32.0, high: float = 105.0, inc: float = 
     return bounded_rand(size=size, low=low, high=high, threshold=inc, start=0)
 
 
-def temp_time_series(size: int = 31, low: float = -32.0, high: float = 105.0, inc: float = 0.01) -> list[tuple[datetime, float]]:
+def temp_time_series(size: int = 31, low: float = -32.0, high: float = 105.0, inc: float = 0.01) -> list[
+    tuple[datetime, float]]:
     """
     same as temps() except this latches a timestamp to each sample
     :param size:
@@ -43,6 +44,46 @@ def temp_time_series(size: int = 31, low: float = -32.0, high: float = 105.0, in
         # time.sleep(random.uniform(0.1, 1.0))
 
     return tt
+
+
+def temp_time_trending(size: int = 31, low: float = -1.0, high: float = 1.0, delta: float = 0.01,
+                       trend_per_sec: float = 0.001, trend_dir: int = 0) -> List[Tuple[datetime, float]]:
+    """
+
+    :param size:
+    :param low:
+    :param high:
+    :param delta:
+    :param trend_per_sec:
+    :param trend_dir: {'downward': -1, 'random (default)': 0, 'upward': 1}
+    :return:
+    """
+    # generate noisy base series
+    noise_series = bounded_rand(size=size, low=low, high=high, threshold=delta)
+
+    # decide overall trend direction
+    if trend_dir == 0:
+        sign = random.choice([-1, 1])
+    elif trend_dir in (-1, 1):
+        sign = trend_dir
+    else:
+        raise ValueError('must be -1, 0, or 1')
+
+    ts_now = datetime.now()
+    res = []
+    elapsed = 0.0       # total seconds elapsed
+
+    for temp in noise_series:
+        # advance time by a small delta
+        time_delta = random.uniform(0.1, 1.0)
+        ts_now += timedelta(seconds=time_delta)
+        elapsed += time_delta
+
+        # apply signed drift
+        temp_trend = temp + sign * trend_per_sec * elapsed
+        res.append((ts_now, temp_trend))
+
+    return res
 
 
 def bounded_rand(size: int = 31, low: float = -1.0, high: float = 1.0, threshold: float = 0.01, start: float = None,
@@ -88,13 +129,23 @@ def bounded_rand(size: int = 31, low: float = -1.0, high: float = 1.0, threshold
 
 
 def main():
-    t = temp_time_series()
-    X = [ts for ts, _ in t]
-    y = [temp for _, temp in t]
+    '''
+    t = temp_time_series(low=-20.0, high=105.0)
+    X1 = [ts for ts, _ in t]
+    y1 = [temp for _, temp in t]
+    print(t)
+    '''
+
+    t2 = temp_time_trending(low=-20.0, high=105.0, trend_per_sec=0.005, trend_dir=-1)
+    X2 = [ts for ts, _ in t2]
+    y2 = [temp for _, temp in t2]
+    print(t2)
 
     # t = temps(size=100, inc=0.1, low=-20.0, high=100.0)
     fig, ax = plt.subplots(figsize=(9, 4))
-    ax.plot(X, y, '.-')
+    # ax.plot(X1, y1, linestyle='solid', label='temps')
+    ax2 = ax.twinx()
+    ax2.plot(X2, y2, linestyle='dotted', label='trending temps')
 
     # tell matplotlib how to format the x-axis
     locator = mdates.AutoDateLocator()
