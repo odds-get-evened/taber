@@ -52,7 +52,7 @@
 ### Environmental Control
 
 * HVAC Systems: Maintains optimal temperature and humidity for servers.
-* Heat Pumps: Use industrial-scale pumps for efficient heating and cooling.
+* Heat Pumps: Use industrial-scale pumps for efficient heating and cooling (industrial heat pumps (200 kWₜh+) with COPs from ~3 to 6, ideal for upgrading low-temperature waste heat (~30–45 °C) to higher usable temperatures (60–150 °C)).
 * Insulation and Sealing: Ensures minimal energy waste.
 
 ### Site Infrastructure
