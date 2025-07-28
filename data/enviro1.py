@@ -21,40 +21,17 @@ def temps(size: int = 31, low: float = -32.0, high: float = 105.0, inc: float = 
     return bounded_rand(size=size, low=low, high=high, threshold=inc, start=0)
 
 
-def temp_time_series(size: int = 31, low: float = -32.0, high: float = 105.0, inc: float = 0.01) -> list[
-    tuple[datetime, float]]:
-    """
-    same as temps() except this latches a timestamp to each sample
-    :param size:
-    :param low:
-    :param high:
-    :param inc:
-    :return:
-    """
-    tmps = temps(size=size, low=low, high=high, inc=0.1)
-    tt = []
-    ts = datetime.now()
-    for tmp in tmps:
-        # get random adjustment to time delay
-        dt = random.uniform(0.1, 1.0)
-        # increment now() by random delay value
-        ts += timedelta(seconds=dt)
-        tt.append((ts, tmp))
-        # no longer worth using, as this will create long runtimes
-        # time.sleep(random.uniform(0.1, 1.0))
-
-    return tt
-
-
 def temp_time_trending(size: int = 31, low: float = -1.0, high: float = 1.0, delta: float = 0.01,
                        trend_per_sec: float = 0.001, trend_dir: int = 0) -> List[Tuple[datetime, float]]:
     """
-
+    similar to temps, but latches timestamp to each sample, with varying time deltas.
+    allows for trending a noisy sample series, which can be either, downward, random,
+    or upward trending.
     :param size:
     :param low:
     :param high:
     :param delta:
-    :param trend_per_sec:
+    :param trend_per_sec: how long a trend will last
     :param trend_dir: {'downward': -1, 'random (default)': 0, 'upward': 1}
     :return:
     """
@@ -68,6 +45,7 @@ def temp_time_trending(size: int = 31, low: float = -1.0, high: float = 1.0, del
         sign = trend_dir
     else:
         raise ValueError('must be -1, 0, or 1')
+    print(f"trend {sign}")
 
     ts_now = datetime.now()
     res = []
@@ -129,14 +107,7 @@ def bounded_rand(size: int = 31, low: float = -1.0, high: float = 1.0, threshold
 
 
 def main():
-    '''
-    t = temp_time_series(low=-20.0, high=105.0)
-    X1 = [ts for ts, _ in t]
-    y1 = [temp for _, temp in t]
-    print(t)
-    '''
-
-    t2 = temp_time_trending(low=-20.0, high=105.0, trend_per_sec=0.005, trend_dir=-1)
+    t2 = temp_time_trending(size=256, low=-20.0, high=105.0, trend_per_sec=0.005)
     X2 = [ts for ts, _ in t2]
     y2 = [temp for _, temp in t2]
     print(t2)
